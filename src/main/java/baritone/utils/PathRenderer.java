@@ -294,8 +294,8 @@ public final class PathRenderer implements IRenderer, Helper {
 
             y1 = 0;
             y2 = 0;
-            minY = 0 - renderPosY;
-            maxY = 256 - renderPosY;
+            minY = -64 - renderPosY;
+            maxY = 320 - renderPosY;
         } else if (goal instanceof GoalComposite) {
             for (Goal g : ((GoalComposite) goal).goals()) {
                 drawDankLitGoalBox(stack, player, g, partialTicks, color);
